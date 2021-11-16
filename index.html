@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani Fitness Center</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            /*  border: 2px solid red;*/
+            left: 60px;
+            top: 20px;
+            position: absolute;
+        }
+
+        .left img {
+            width: 90px;
+            /* filter: invert(100%);/*it is used to invert the color ,i.e.,from black to white or vice versa.*/
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        .mid {
+            display: block;
+            width: 51%;
+            /* here we have taken width bcoz we are making navigation bar */
+            margin: 10px auto;
+            /*to make it in the center*/
+            /* border: 2px solid green;*/
+            font-size: 25px;
+        }
+
+        .right {
+            display: inline-block;
+            right: 34px;
+            top: 29px;
+            position: absolute;
+            /*  border: 2px solid yellow;*/
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 12px;
+            /* font-size: 18px;*/
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 6px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #808080;
+        }
+
+        .container {
+            /* border: 2px solid white;*/
+            margin: 60px 60px;
+            padding: 40px 40px;
+            width: 35%;
+            border-radius: 12px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            width: 300px;
+            border: 2px solid black;
+            margin: 10px auto;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: 'Baloo Bhai 2', cursive;
+            
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 30%;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Shivani Fitness</div>
+        </div>
+        <!-- middle box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="https://facebook.com" class="active">Home</a></li>
+                <li><a href="https://google.com">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your contact no">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
